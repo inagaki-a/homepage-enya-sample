@@ -180,6 +180,7 @@ nav {
 
 /* 真ん中のバー */
 .menu-open span:nth-child(2) {
+  transition-delay: 0.2s;
   transform: translateX(-18px) scale(0);
 }
 
@@ -233,7 +234,6 @@ nav {
     border: #1c352c;
     border-radius: 100%;
     padding: 30px;
-    display: block;
   }
 }
 
@@ -245,7 +245,6 @@ nav {
   font-weight: 600;
   left: 5.5rem;
   top: 80%;
-  display: block;
 }
 
 @media screen and (max-width: 960px) {
@@ -256,7 +255,7 @@ nav {
     text-shadow: #e6e6e6 2px 4px 8px;
     font-weight: 600;
     left: 1.2rem;
-    top: 30%;
+    top: 35%;
   }
 }
 
