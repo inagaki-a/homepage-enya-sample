@@ -5,6 +5,7 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     color: black;
     overflow-x: hidden;
+    position: relative;
 }
 
 * {
@@ -92,8 +93,6 @@ nav {
 
 .menu-open {
   transform: translateX(0%) !important;
-  z-index: 9999;
-  overflow: hidden;
 }
 
 /* リスト */
@@ -189,8 +188,8 @@ nav {
   */
 
 /* header-img */
-.header-img2 {
-  margin-top: 150px;
+.header-img-area {
+  position: relative;
 }
 
 .header-img img{
@@ -255,7 +254,7 @@ nav {
     text-shadow: #e6e6e6 2px 4px 8px;
     font-weight: 600;
     left: 1.2rem;
-    top: 35%;
+    top: 60%;
   }
 }
 
