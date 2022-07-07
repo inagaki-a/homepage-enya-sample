@@ -56,7 +56,7 @@ nav {
   min-height: 8vh;
   width: 60%;
   align-items: center;
-  background-color: rgb(16, 35, 179);
+  background-color: rgb(255, 255, 255);
 }
 
 /* レスポンシブ対応 */
@@ -65,8 +65,8 @@ nav {
     position: absolute;
     right: 0;
     height: 92vh;
-    top: 10vh;
-    background-color: #000000;
+    top: 11vh;
+    background-color: #3c715d;
     color: #f6f6f6;
     flex-direction: column;
     align-items: center;
@@ -77,7 +77,11 @@ nav {
   }
 
   .header_nav_list li {
-    opacity: 0;
+    opacity: 1;
+  }
+
+  html,body {
+    overflow-x: hidden;
   }
 
   /* ハンバーガー表示 */
@@ -89,21 +93,13 @@ nav {
 .menu-open {
   transform: translateX(0%) !important;
   z-index: 9999;
+  overflow: hidden;
 }
 
-/* liが連続したら */
-/* .header_nav_list > li + li {
-  margin-left: 40px;
-} */
-
 /* リスト */
-/* .header_area a {
-  font-size: 15px/1em;
-  font-weight: 500;
-} */
 
 /* お問い合わせボタン */
-/* .header_nav_list .btn_contact {
+.header_nav_list .btn_contact {
   display: flex;
   align-items: center;
   height: 36px;
@@ -112,9 +108,9 @@ nav {
   border-radius: 4px;
   padding: 0 20px 0 48px;
   position: relative;
-} */
+}
 
-/* 
+
 .btn_contact:hover {
   color: white;
   background-color: #3c715d;
@@ -122,10 +118,10 @@ nav {
   border-radius: 4px;
   padding: 0 20px 0 48px;
   position: relative;
-} */
+}
 
 /* お問い合わせロゴ */
-/* .header_nav_list .btn_contact:before {
+.header_nav_list .btn_contact:before {
   content: "";
   display: block;
   background: url(./logo/メール.svg) no-repeat;
@@ -135,7 +131,7 @@ nav {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-} */
+}
 
 /* ハンバーガーメニュー */
 .hamburger {
@@ -154,48 +150,37 @@ nav {
 }
 
 .hamburger > span {
-  /* 黒線にする */
   background-color: black;
-  /* 横幅 */
   width: 36px;
-  /* 高さ */
   height: 2.5px;
-  /* ブロックに変更 */
   display: block;
-  /* 下のあいだ調整 */
   margin-bottom: 8px;
-  /* アニメーション完了までの時間 */
   transition: transform 1s;
+  color: white;
 }
 
 .hamburger span:nth-child(3) {
-  /* いちばん下なのでゼロに変更 */
   margin-bottom: 0px;
 }
 /* メニューオープンで黒に変更 */
-.menu-open {
-  background-color: #000000;
-}
 /* メニューオープンでspanを黒に変更 */
 .menu-open span {
-  background-color: white;
+  color: #000000;
 }
 
 /* いちばん上のバー */
-.menu-open .hamburger span:nth-child(1) {
-  /* 開始までの時間 */
+.menu-open span:nth-child(1) {
   transition-delay: 0.2s;
-  /* 下に10px移動　反時計回り315度回る */
   transform: translateY(10px) rotate(-315deg);
 }
 
 /* いちばん下のバー */
-.menu-open .hamburger span:nth-child(3) {
+.menu-open span:nth-child(3) {
   transform: translateY(-10px) rotate(315deg);
 }
 
 /* 真ん中のバー */
-.menu-open .hamburger span:nth-child(2) {
+.menu-open span:nth-child(2) {
   transform: translateX(-18px) scale(0);
 }
 
