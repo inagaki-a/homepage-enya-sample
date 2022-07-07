@@ -170,7 +170,6 @@ nav {
 
 /* いちばん上のバー */
 .menu-open span:nth-child(1) {
-  transition-delay: 0.2s;
   transform: translateY(10px) rotate(-315deg);
 }
 
@@ -234,6 +233,7 @@ nav {
     border: #1c352c;
     border-radius: 100%;
     padding: 30px;
+    display: block;
   }
 }
 
@@ -245,6 +245,7 @@ nav {
   font-weight: 600;
   left: 5.5rem;
   top: 80%;
+  display: block;
 }
 
 @media screen and (max-width: 960px) {
