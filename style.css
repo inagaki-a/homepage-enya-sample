@@ -124,7 +124,7 @@ nav {
 .header_nav_list .btn_contact:before {
   content: "";
   display: block;
-  background: url(./logo/メール.svg) no-repeat;
+  background: url(./メール.svg) no-repeat;
   width: 24px;
   height: 24px;
   position: absolute;
