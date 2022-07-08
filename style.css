@@ -217,6 +217,8 @@ nav {
   border: #1c352c;
   border-radius: 100%;
   padding: 30px;
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
 }
 
 @media screen and (max-width: 960px) {
@@ -243,6 +245,8 @@ nav {
   font-weight: 600;
   left: 5.5rem;
   top: 45%;
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
 }
 
 @media screen and (max-width: 960px) {
@@ -267,6 +271,10 @@ nav {
   margin-bottom: 200px;
 }
 
+.poricy-head.start-animation {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+}
 
 @media screen and (max-width: 960px) {
   .poricy-head {
@@ -336,6 +344,12 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+.card-1.start-animation {
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+}
+
 
 @media screen and (max-width: 960px) {
   .card-1 {
@@ -420,6 +434,11 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.card-2.start-animation {
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
 }
 
 @media screen and (max-width: 960px) {
@@ -507,6 +526,11 @@ nav {
   height: 100px;
 }
 
+.services-img-area.start-animation {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+}
+
 .services-img img{
   position: absolute;
   width: 200px;
@@ -544,6 +568,11 @@ nav {
 .group-home-section {
   position: relative;
   width: 100%;
+}
+
+.group-home-section.start-animation{
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
 }
 
 @media screen and (max-width: 960px) {
@@ -727,6 +756,11 @@ nav {
   width: 100%;
 }
 
+.employ-section.start-animation {
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
+}
+
 @media screen and (max-width: 960px) {
   .employ-section {
     position: relative;
@@ -886,6 +920,10 @@ nav {
   position: relative;
   width: 100%;
 }
+.consulting-section.start-animation{
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+}
 
 @media screen and (max-width: 960px) {
   .consulting-section {
@@ -1035,6 +1073,11 @@ nav {
 .blog-section {
   position: relative;
   width: 100%;
+}
+
+.blog-section.start-animation{
+  animation-name: fadeInRight;
+  animation-duration: 1.5s;
 }
 
 @media screen and (max-width: 960px) {
@@ -1268,4 +1311,38 @@ footer .container {
     text-align: center;
     margin: 0 auto;
   }
+}
+
+/* アニメーション */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+ }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(50%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+ }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+ }
 }
